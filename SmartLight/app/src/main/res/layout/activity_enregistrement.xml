@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="meriem.com.smartlight.enregistrement"
+    android:background="#ff000000"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Entrez le Login et le mot de passe que vous voulez utiliser:"
+        android:id="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="140dp"
+        android:textColor="#fffff429"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login:"
+        android:id="@+id/textView15"
+        android:textStyle="bold"
+        android:textColor="#fffff429"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView16" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enreg1"
+        android:textColor="#ff000000"
+        android:inputType="text"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignEnd="@+id/textView13"
+        android:layout_toEndOf="@+id/textView15"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:autoText="true"
+        android:enabled="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Password:"
+        android:id="@+id/textView16"
+        android:textColor="#fffff429"
+        android:textStyle="bold"
+        android:layout_below="@+id/enreg1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enreg2"
+        android:textColor="#ff000000"
+        android:inputType="text"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignStart="@+id/enreg1"
+        android:layout_alignEnd="@+id/enreg1"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:autoText="true"
+        android:enabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregister"
+        android:id="@+id/enreg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logosmart" />
+
+</RelativeLayout>
